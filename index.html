@@ -9,6 +9,7 @@
         content="Official developer portfolio and privacy hub for SGNexa Labs. Building next-generation mobile applications, smart tools, and interactive games.">
 
     <!-- Fonts & Icons -->
+    <link rel="icon" type="image/x-icon" href="./assets/sgnexalabs.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
@@ -302,8 +303,9 @@
                             </div>
                             <div
                                 class="relative w-36 h-36 sm:w-44 sm:h-44 rounded-3xl bg-slate-900 p-3 border border-slate-700/80 shadow-2xl flex items-center justify-center">
-                                <img src="./assets/numetra.png" alt="Numetra App Icon"
-                                    class="w-full h-full object-cover rounded-2xl">
+                                <img src="./assets/wordly.png" alt="Wordly App Icon"
+                                    class="w-full h-full object-cover rounded-2xl"
+                                    onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex items-center justify-center bg-brand-600 text-white text-4xl rounded-2xl\'><i class=\'fa-solid fa-gamepad\'></i></div>';">
                             </div>
                         </div>
                     </div>
@@ -311,38 +313,40 @@
                     <div class="md:col-span-8 space-y-4 text-center md:text-left">
                         <div
                             class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-bold uppercase tracking-wider">
-                            <i class="fa-solid fa-fire text-amber-400"></i> Featured Flagship Utility
+                            <i class="fa-solid fa-gamepad text-indigo-400"></i> Featured Word Puzzle Game
                         </div>
 
-                        <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Numetra - Calculator &
-                            Utility Tools</h2>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Wordly - Word Search Puzzle
+                        </h2>
 
                         <p class="text-slate-300 text-base leading-relaxed">
-                            Engineered for high-speed calculation accuracy. Numetra packs dynamic math capabilities,
-                            instant unit conversions, financial calculators, and daily operational task solvers into one
-                            lightweight, intuitive dark-mode interface.
+                            Find hidden words, solve letter-grid puzzles, and enjoy a relaxing word search game whenever
+                            you have a few minutes. Designed for quick brain training and offline casual play.
                         </p>
 
                         <!-- Key Feature Pills -->
                         <div class="flex flex-wrap gap-2 pt-2 justify-center md:justify-start">
                             <span
                                 class="px-3 py-1 rounded-lg bg-slate-800/80 text-xs text-slate-300 border border-slate-700/50"><i
-                                    class="fa-solid fa-bolt text-amber-400 mr-1.5"></i>Instant Conversions</span>
+                                    class="fa-solid fa-brain text-amber-400 mr-1.5"></i>Brain Training</span>
                             <span
                                 class="px-3 py-1 rounded-lg bg-slate-800/80 text-xs text-slate-300 border border-slate-700/50"><i
-                                    class="fa-solid fa-moon text-indigo-400 mr-1.5"></i>Sleek Dark Theme</span>
+                                    class="fa-solid fa-spell-check text-indigo-400 mr-1.5"></i>Letter Grid
+                                Puzzles</span>
+                            <span
+                                class="px-3 py-1 rounded-lg bg-slate-800/80 text-xs text-slate-300 border border-slate-700/50"><i
+                                    class="fa-solid fa-wifi-slash text-emerald-400 mr-1.5"></i>Offline Play</span>
                         </div>
 
                         <div class="pt-4 flex flex-wrap items-center justify-center md:justify-start gap-4">
-                            <a href="https://play.google.com/store/apps/details?id=com.numetra.app" target="_blank"
-                                rel="noopener"
+                            <a href="https://play.google.com/store/apps/details?id=com.sgnexalabs.wordly"
+                                target="_blank" rel="noopener"
                                 class="inline-flex items-center gap-2.5 px-6 py-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-sm font-semibold shadow-lg shadow-brand-600/30 transition-all hover:scale-[1.02]">
                                 <i class="fa-brands fa-google-play text-base"></i> Get on Play Store
                             </a>
-                            <a href="https://sahilghoghari07.github.io/numetra-privacy.html" target="_blank"
-                                rel="noopener"
+                            <a href="#apps"
                                 class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 text-slate-200 border border-slate-700 text-sm font-medium transition-all">
-                                <i class="fa-solid fa-shield-halved text-brand-400"></i> Read Privacy Policy
+                                <i class="fa-solid fa-layer-group text-brand-400"></i> Explore All Apps
                             </a>
                         </div>
                     </div>
@@ -533,8 +537,6 @@
                         <li><a href="#apps" class="hover:text-brand-400 transition-colors">Our Applications</a></li>
                         <li><a href="#spotlight" class="hover:text-brand-400 transition-colors">Featured App</a></li>
                         <li><a href="#about" class="hover:text-brand-400 transition-colors">Studio Vision</a></li>
-                        <li><a href="numetra-privacy.html" class="hover:text-brand-400 transition-colors">Privacy
-                                Statement</a></li>
                     </ul>
                 </div>
 
@@ -577,17 +579,28 @@
         // Applications Database
         const APP_DATA = [
             {
+                id: 'wordly',
+                title: 'Wordly',
+                category: 'Games',
+                icon: './assets/wordly.png',
+                fallbackIcon: 'fa-gamepad',
+                description: 'Find hidden words, solve letter-grid puzzles, and enjoy a relaxing word search game whenever you have a few minutes.',
+                tags: ['Word Search', 'Brain Game', 'Word Puzzle'],
+                playStoreUrl: 'https://play.google.com/store/apps/details?id=com.sgnexalabs.wordly',
+                badge: 'Game'
+            },
+            {
                 id: 'numetra',
                 title: 'Numetra',
                 category: 'Tools & Utilities',
-                rating: '3+',
+                // rating: '3+',
                 // reviews: '1.2k',
                 icon: './assets/numetra.png',
                 fallbackIcon: 'fa-calculator',
                 description: 'A simple, fast, and easy-to-use all-in-one calculator and utility app designed to make everyday, financial, health, and practical calculations easier.',
                 tags: ['Calculator', 'Unit Converter', 'Utilities'],
                 playStoreUrl: 'https://play.google.com/store/apps/details?id=com.numetra.app',
-                badge: 'Popular'
+                badge: 'Utility'
             }
         ];
 
@@ -648,15 +661,6 @@
                                     </div>
                                 </div>
                                 <span class="px-2.5 py-1 rounded-full text-[10px] font-extrabold bg-brand-500/10 text-brand-400 border border-brand-500/20">${app.badge}</span>
-                            </div>
-
-                            <!-- Rating & Description -->
-                            <div class="flex items-center gap-2 mb-3 text-xs text-slate-400">
-                                <div class="flex items-center text-amber-400 text-xs">
-                                    <i class="fa-solid fa-star"></i>
-                                    <span class="ml-1 font-bold text-slate-200">${app.rating}</span>
-                                </div>
-                                <span>${app.reviews !== undefined ? `• ${app.reviews} reviews` : ''}</span>
                             </div>
 
                             <p class="text-slate-300 text-xs leading-relaxed mb-4">${app.description}</p>

@@ -5,9 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Numetra Privacy Policy</title>
+  <title>Privacy Policy - Numetra | SGNexa Labs</title>
 
-  <meta name="description" content="Privacy Policy for Numetra - Calculator and Converter App" />
+  <meta name="description"
+    content="Privacy Policy for Numetra - Calculator & Utility Tools developed by SGNexa Labs." />
+  <link rel="icon" type="image/x-icon" href="./assets/numetra.png">
 
   <style>
     * {
@@ -20,14 +22,7 @@
 
     body {
       margin: 0;
-      font-family:
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Helvetica,
-        Arial,
-        sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       background: #f7f7fb;
       color: #202124;
       line-height: 1.7;
@@ -46,10 +41,20 @@
 
     .brand {
       display: inline-block;
-      margin-bottom: 12px;
-      font-size: 30px;
+      margin-bottom: 8px;
+      font-size: 28px;
       font-weight: 800;
       letter-spacing: -0.5px;
+    }
+
+    .sub-brand {
+      display: block;
+      font-size: 14px;
+      color: #a594f9;
+      font-weight: 600;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
 
     header h1 {
@@ -64,6 +69,17 @@
       font-size: 15px;
     }
 
+    .last-updated {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 8px 14px;
+      border-radius: 10px;
+      background: rgba(240, 237, 255, 0.15);
+      color: #e3dcff;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
     main {
       padding: 36px 0 60px;
     }
@@ -73,20 +89,21 @@
       border-radius: 18px;
       padding: 32px;
       margin-bottom: 20px;
-      box-shadow: 0 4px 20px rgba(20, 10, 50, 0.06);
+      box-shadow: 0 4px 20px rgba(20, 10, 50, 0.05);
+      border: 1px solid #ebebf2;
     }
 
     h2 {
       margin: 0 0 14px;
       color: #0b0428;
-      font-size: 22px;
+      font-size: 21px;
       line-height: 1.35;
     }
 
     h3 {
       margin: 24px 0 8px;
       color: #24213a;
-      font-size: 17px;
+      font-size: 16px;
     }
 
     p {
@@ -102,23 +119,13 @@
       margin-bottom: 7px;
     }
 
-    .last-updated {
-      display: inline-block;
-      margin-top: 18px;
-      padding: 8px 12px;
-      border-radius: 10px;
-      background: #f0edff;
-      color: #4936a3;
-      font-size: 13px;
-      font-weight: 600;
-    }
-
     .highlight {
       background: #f7f5ff;
       border-left: 4px solid #5b45d6;
       padding: 16px 18px;
-      border-radius: 10px;
+      border-radius: 8px;
       margin: 18px 0;
+      font-size: 14px;
     }
 
     a {
@@ -139,6 +146,15 @@
       text-align: center;
     }
 
+    footer a {
+      color: inherit;
+      text-decoration: underline;
+    }
+
+    footer a:hover {
+      color: #4f3cc9;
+    }
+
     @media (max-width: 600px) {
       header {
         padding: 42px 0 36px;
@@ -150,11 +166,11 @@
 
       .card {
         padding: 22px;
-        border-radius: 15px;
+        border-radius: 14px;
       }
 
       h2 {
-        font-size: 20px;
+        font-size: 19px;
       }
     }
   </style>
@@ -165,15 +181,16 @@
   <header>
     <div class="container">
       <div class="brand">Numetra</div>
+      <span class="sub-brand">By SGNexa Labs</span>
 
       <h1>Privacy Policy</h1>
 
       <p>
-        Privacy Policy for the Numetra calculator and converter application.
+        Privacy Policy for the Numetra calculator and utility application.
       </p>
 
       <span class="last-updated">
-        Last updated: September 24, 2026
+        Last updated: November 3, 2026
       </span>
     </div>
   </header>
@@ -183,342 +200,210 @@
 
       <section class="card">
         <h2>1. Introduction</h2>
-
         <p>
-          Welcome to Numetra. Numetra is a calculator and converter
-          application designed to provide everyday calculation and
-          conversion tools.
+          Welcome to Numetra, developed and published by <strong>SGNexa Labs</strong> ("we", "us", or "our"). Numetra is
+          an all-in-one calculator and unit conversion tool engineered to deliver accurate, swift, and everyday
+          operational calculations.
         </p>
-
         <p>
-          This Privacy Policy explains how Numetra handles information
-          when you use the application.
+          We take user privacy seriously. This Privacy Policy outlines what information Numetra stores locally, how
+          third-party advertising partners handle telemetry data, and your rights concerning data retention and
+          deletion.
         </p>
-
         <p>
-          By using Numetra, you acknowledge the practices described in
-          this Privacy Policy.
+          By installing or using Numetra, you acknowledge and agree to the practices described herein.
         </p>
       </section>
-
 
       <section class="card">
         <h2>2. Information Stored Locally on Your Device</h2>
-
         <p>
-          Numetra provides features that store certain information locally
-          on your device.
+          Numetra provides features that store operational settings and records locally on your device storage (such as
+          via local asynchronous storage):
         </p>
-
-        <p>This may include:</p>
-
         <ul>
-          <li>Calculation history</li>
-          <li>Favorite calculators or converters</li>
-          <li>Theme preferences, such as light, dark, or system theme</li>
-          <li>Haptic feedback preference</li>
+          <li>Calculation records and history logs</li>
+          <li>favorite calculator and conversion categories</li>
+          <li>User interface theme preferences (Light, Dark, or System Default)</li>
+          <li>Haptic feedback and sound preferences</li>
         </ul>
-
         <div class="highlight">
-          This information is stored locally on your device and is not
-          transmitted to Numetra servers as part of the application's
-          normal functionality.
+          <strong>Local Isolation:</strong> All calculation records and preferences reside strictly on your device. We
+          do not transmit, back up, or sync your calculations to our own dedicated remote servers.
         </div>
       </section>
 
-
       <section class="card">
-        <h2>3. Advertising</h2>
-
+        <h2>3. Advertising & Analytics</h2>
         <p>
-          Numetra is supported by advertising.
+          Numetra is supported by third-party advertising to keep tools accessible free of charge. We use <strong>Google
+            Mobile Ads (AdMob)</strong>, provided by Google LLC, to serve banner and interstitial advertisements.
         </p>
-
         <p>
-          The application uses Google Mobile Ads to display advertisements,
-          including banner and interstitial advertisements.
-        </p>
-
-        <p>
-          Google Mobile Ads is provided by Google and may collect certain
-          information from your device and your interactions with the
-          application in order to provide, measure, maintain, and protect
-          advertising services.
+          The Google Mobile Ads SDK may collect certain diagnostic and operational information from your device and your
+          interactions with the app in order to serve, measure, and protect ad operations.
         </p>
       </section>
 
-
       <section class="card">
-        <h2>4. Information Collected Through Google Mobile Ads</h2>
-
+        <h2>4. Information Processed by Google Mobile Ads</h2>
         <p>
-          Depending on the applicable configuration, Google Mobile Ads may
-          automatically collect or share information such as:
+          Depending on your operating system version and configuration, Google Mobile Ads may process data such as:
         </p>
-
         <ul>
-          <li>IP address</li>
-          <li>Device and advertising identifiers</li>
-          <li>App or device-related identifiers</li>
-          <li>Information about interactions with the application</li>
-          <li>Advertising interactions</li>
-          <li>Diagnostic and performance information</li>
-          <li>Information used for fraud prevention and security</li>
+          <li>IP address (used to infer coarse location for regional compliance and ad delivery)</li>
+          <li>Device and advertising identifiers (e.g., Android Advertising ID / GAID)</li>
+          <li>Application and interaction telemetry (ad clicks, impressions, viewability)</li>
+          <li>Diagnostic logs, crash metrics, and runtime performance indicators</li>
+          <li>Security and anti-fraud signals</li>
         </ul>
-
         <p>
-          Google states that information collected by the Google Mobile Ads
-          SDK is encrypted in transit.
+          Data collected by the Google Mobile Ads SDK is transmitted using standard transport encryption (HTTPS/TLS).
         </p>
-
         <p>
-          For more information about Google's handling of information,
-          please review Google's privacy documentation:
-        </p>
-
-        <p>
+          For comprehensive details on how Google processes ad data, please review the
           <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
             Google Privacy Policy
-          </a>
-        </p>
-
-        <p>
-          Information about Google Mobile Ads and Google Play data
-          disclosure can also be found in Google's developer documentation.
+          </a>.
         </p>
       </section>
-
 
       <section class="card">
-        <h2>5. Non-Personalized Advertising</h2>
-
+        <h2>5. Non-Personalized Advertising & Consent (EEA / UK)</h2>
         <p>
-          Numetra currently requests non-personalized advertisements from
-          Google Mobile Ads.
+          Numetra requests non-personalized advertisements where configured. Non-personalized ads are contextual rather
+          than based on previous browsing history.
         </p>
-
         <p>
-          Non-personalized advertisements are not selected based on a
-          user's previous activity for personalized advertising.
-        </p>
-
-        <p>
-          However, non-personalized advertising does not mean that no
-          information is processed. Certain information may still be
-          processed for purposes such as ad delivery, frequency capping,
-          aggregated reporting, security, and fraud prevention.
+          Even for non-personalized advertising, basic device data is processed for frequency capping, aggregated
+          reporting, and fraud detection. Where mandated by regional regulations (such as GDPR in the EEA and UK), users
+          may be presented with a Google-certified User Messaging Platform (UMP) consent screen to manage consent
+          preferences.
         </p>
       </section>
-
 
       <section class="card">
         <h2>6. How We Use Information</h2>
-
         <p>
-          Information handled by Numetra or its service providers may be
-          used for the following purposes:
+          Information handled by Numetra or integrated SDKs is used strictly to:
         </p>
-
         <ul>
-          <li>Providing calculator and converter functionality</li>
-          <li>Saving your local preferences and calculation history</li>
-          <li>Displaying advertisements</li>
-          <li>Measuring advertising performance</li>
-          <li>Maintaining application and advertising functionality</li>
-          <li>Detecting and preventing fraud or abuse</li>
-          <li>Diagnosing technical and performance issues</li>
-          <li>Improving reliability and user experience</li>
+          <li>Deliver calculator and unit converter functionality</li>
+          <li>Store local user calculations and interface preferences</li>
+          <li>Display banner and interstitial advertisements</li>
+          <li>Measure ad delivery performance and prevent click fraud</li>
+          <li>Diagnose runtime issues, bugs, and app performance degradation</li>
         </ul>
       </section>
 
-
       <section class="card">
-        <h2>7. Information Sharing</h2>
-
+        <h2>7. Information Sharing & Sale</h2>
         <p>
-          Numetra does not sell your locally stored calculation history,
-          favorites, or application preferences.
+          <strong>Numetra does not sell, lease, or monetize your calculation history or personal preferences.</strong>
         </p>
-
         <p>
-          Information may be processed or shared by third-party service
-          providers when necessary to provide their services to the
-          application.
-        </p>
-
-        <p>
-          In particular, Google Mobile Ads may collect and share information
-          as described in Google's documentation for advertising, analytics,
-          security, and fraud prevention purposes.
-        </p>
-
-        <p>
-          We may also disclose information where required by applicable law,
-          legal process, or to protect the rights, safety, and security of
-          users or the application.
+          We do not require user account registration, passwords, or personal credentials (such as your name, email, or
+          telephone number). Data handling with third parties is restricted solely to Google Mobile Ads for ad delivery
+          and security compliance.
         </p>
       </section>
-
 
       <section class="card">
         <h2>8. Data Retention and Deletion</h2>
-
-        <h3>Local application data</h3>
-
+        <h3>Local Application Records</h3>
         <p>
-          Calculation history and other locally stored preferences remain
-          on your device until you delete them, clear the application's
-          storage, uninstall Numetra, or otherwise remove the stored data.
+          Your calculation history remains saved on your device until you decide to remove it. You can clear your
+          calculation history at any time using the in-app "Clear History" button, by clearing the app data in Android
+          Settings, or by uninstalling Numetra.
         </p>
-
+        <h3>Advertising Records</h3>
         <p>
-          Numetra provides a "Clear History" feature that allows you to
-          delete your saved calculation history from within the application.
-        </p>
-
-        <h3>Advertising-related information</h3>
-
-        <p>
-          Information processed by Google Mobile Ads is handled according
-          to Google's applicable policies, retention practices, and user
-          controls.
-        </p>
-
-        <p>
-          Please refer to
-          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
-            Google's Privacy Policy
-          </a>
-          for additional information.
+          Information handled by Google Mobile Ads is retained and managed according to Google’s standard data retention
+          policies and user control settings.
         </p>
       </section>
-
 
       <section class="card">
         <h2>9. Data Security</h2>
-
         <p>
-          Numetra is designed to minimize the information that it directly
-          stores and processes.
-        </p>
-
-        <p>
-          Information stored by Numetra locally remains on your device
-          unless another service or operating-system feature processes it.
-        </p>
-
-        <p>
-          Data transmitted by Google Mobile Ads is handled using security
-          measures described by Google, including encryption in transit.
+          Numetra is built on a minimal-data architecture. Because calculation data is held locally on your device
+          sandbox, it remains protected by your device's security model. Network traffic initiated by third-party ad
+          providers is encrypted in transit.
         </p>
       </section>
-
 
       <section class="card">
         <h2>10. Children's Privacy</h2>
-
         <p>
-          Numetra is not specifically directed toward children under the
-          age required by applicable laws.
+          Numetra is a general utility application not directed toward children under 13 years of age. We do not
+          knowingly collect personal identifiable information directly from children.
         </p>
-
         <p>
-          We do not knowingly collect personal information directly from
-          children through Numetra.
-        </p>
-
-        <p>
-          If you believe that a child has provided personal information
-          through the application, please contact us so that we can review
-          the situation and take appropriate action.
+          If you believe a child has provided personal information through our services, please contact us immediately
+          to have the information investigated and addressed.
         </p>
       </section>
-
 
       <section class="card">
         <h2>11. Third-Party Services</h2>
-
         <p>
-          Numetra uses third-party services to provide certain functionality,
-          including advertising.
+          The third-party service integrated into Numetra is:
         </p>
-
-        <p>
-          The primary third-party service currently used by Numetra is:
-        </p>
-
         <ul>
-          <li>
-            Google Mobile Ads
-          </li>
+          <li><strong>Google Mobile Ads (AdMob)</strong> - For banner and interstitial ad delivery.</li>
         </ul>
-
         <p>
-          Third-party services operate under their own privacy policies and
-          terms. We recommend reviewing the applicable policies of these
-          providers.
-        </p>
-
-        <p>
+          For more information, please review the
           <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
             Google Privacy Policy
-          </a>
+          </a>.
         </p>
       </section>
 
+      <section class="card">
+        <h2>12. Device Permissions</h2>
+        <p>
+          Numetra requests only standard Android permissions necessary for functional operations:
+        </p>
+        <ul>
+          <li><strong>INTERNET &amp; ACCESS_NETWORK_STATE:</strong> Used by Google Mobile Ads to fetch ad inventory and
+            verify active connectivity.</li>
+          <li><strong>VIBRATE:</strong> Used solely to provide optional haptic tactile feedback when keypads are pressed.</li>
+        </ul>
+        <p>
+          Numetra does <strong>not</strong> request access to sensitive hardware or personal user data such as location,
+          contacts, camera, or device storage files.
+        </p>
+      </section>
 
       <section class="card">
         <h2>13. Changes to This Privacy Policy</h2>
-
         <p>
-          We may update this Privacy Policy from time to time to reflect
-          changes to Numetra, third-party services, applicable laws, or
-          privacy practices.
-        </p>
-
-        <p>
-          When changes are made, the "Last updated" date at the top of this
-          page will be updated.
-        </p>
-
-        <p>
-          We encourage you to review this Privacy Policy periodically.
+          We may update this Privacy Policy periodically to reflect app features, policy revisions, or regulatory
+          changes. The "Last updated" date at the top will indicate when the policy was revised.
         </p>
       </section>
 
-
       <section class="card">
         <h2>14. Contact Us</h2>
-
         <p>
-          If you have questions, concerns, or requests regarding this
-          Privacy Policy or Numetra's privacy practices, please contact us.
+          If you have questions, feedback, or inquiries regarding this Privacy Policy or Numetra's data practices,
+          please reach out to us:
         </p>
-
         <p>
-          <strong>App:</strong> Numetra
-        </p>
-
-        <p>
-          <strong>Privacy Contact:</strong>
-          <a href="mailto:sgnexalabs@gmail.com">
-            sgnexalabs@gmail.com
-          </a>
-        </p>
-
-        <p>
-          We will review privacy-related inquiries and respond as
-          appropriate.
+          <strong>Developer Publisher:</strong> SGNexa Labs<br>
+          <strong>Application:</strong> Numetra - Calculator & Utility Tools<br>
+          <strong>Email:</strong> <a href="mailto:sgnexalabs@gmail.com">sgnexalabs@gmail.com</a>
         </p>
       </section>
 
     </div>
   </main>
 
-
   <footer>
     <div class="container">
-      &copy; 2026 Numetra. All rights reserved.
+      &copy; 2026 <a href="https://sahilghoghari07.github.io/" target="_blank" rel="noopener noreferrer">SGNexaLabs</a>.
+      All rights reserved.
     </div>
   </footer>
 
